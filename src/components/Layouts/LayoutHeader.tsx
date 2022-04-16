@@ -2,7 +2,7 @@ import Logo from "../Logo";
 
 const LayoutHeader = () => {
   return <header>
-      <Logo title="CORONA" img="logo.png"/>
+      <Logo title="Corona App" img="logo.png"/>
   </header>;
 };
 
