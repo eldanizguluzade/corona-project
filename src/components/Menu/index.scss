@@ -1,7 +1,11 @@
+.active{
+ @apply text-amber-400;
+}
+
 .menu {
     @apply flex;
 
     &-item {
-        @apply pr-12 text-lg
+        @apply pl-14 text-lg
     }
 }

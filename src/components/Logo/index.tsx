@@ -9,16 +9,16 @@ interface ILogo {
 
 const Logo = (props: ILogo) => {
   return (
-    <div className="headline">
-      <div className="headline-logo">
-        <img src={props?.img} alt={props?.alt} />
+    <a href={props?.path}>
+      <div className="headline">
+        <div className="headline-logo">
+          <img src={props?.img} alt={props?.alt} />
+        </div>
+        <div className="headline-text">
+          <h1>{props?.title}</h1>
+        </div>
       </div>
-      <div className="headline-text">
-        <h1>
-          <a href={props?.path}>{props?.title}</a>
-        </h1>
-      </div>
-    </div>
+    </a>
   );
 };
 

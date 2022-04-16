@@ -6,11 +6,17 @@ interface IItems {
 }
 
 const Menu = ({ items }: IItems) => {
+
+  const isActive = (path: string) => {
+    const currentPath = window.location.pathname;
+    return currentPath === path ? "active" : "";
+  };
+
   return (
     <nav>
       <ul className="menu">
         {items?.map((item: IMenuItem, index) => (
-          <li className="menu-item" key={index}>
+          <li className={"menu-item " + isActive(item.path)} key={index}>
             <a href={item.path}>{item.name}</a>
           </li>
         ))}
