@@ -1,1 +1,1 @@
-export * from "./corona";
+export * from "./corona-app";
