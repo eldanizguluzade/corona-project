@@ -1,0 +1,10 @@
+.headline{
+    @apply flex items-center;
+
+    & > .headline-logo{
+       @apply w-14 ;
+    }
+    & > .headline-text{
+        @apply font-extrabold text-2xl pl-2;
+    }
+}
