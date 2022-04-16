@@ -1,0 +1,7 @@
+.menu {
+    @apply flex;
+
+    &-item {
+        @apply pr-12 text-lg
+    }
+}

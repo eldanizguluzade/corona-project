@@ -1,5 +1,5 @@
 import React from "react";
-import LayoutBody from "./components/Layouts/LayoutBody";
+import LayoutBody from "./components/Layout/LayoutBody";
 
 function App() {
   return (

@@ -1,15 +1,16 @@
 import "./index.scss";
-interface IMenuItem {
-  name: string;
-  path: string;
+import { IMenuItem } from "../../api";
+
+interface IItems {
+  items: Array<IMenuItem>;
 }
 
-const Menu = (props: Array<IMenuItem>) => {
+const Menu = ({ items }: IItems) => {
   return (
     <nav>
-      <ul>
-        {props?.map((item: IMenuItem) => (
-          <li>
+      <ul className="menu">
+        {items?.map((item: IMenuItem, index) => (
+          <li className="menu-item" key={index}>
             <a href={item.path}>{item.name}</a>
           </li>
         ))}
