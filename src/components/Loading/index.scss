@@ -1,0 +1,9 @@
+.loading {
+    width: 100vw;
+    height: 85vh;
+    @apply flex justify-center items-center;
+
+    &-icon {
+        @apply text-6xl font-extrabold text-yellow-400 animate-spin;
+    }
+}

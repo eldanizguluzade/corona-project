@@ -1,0 +1,15 @@
+.card {
+    @apply bg-white text-neutral-900 w-56 h-56 m-5 shadow-red-800 shadow-lg;
+
+    &-title {
+        @apply text-center font-bold py-2;
+    }
+
+    &-content {
+        @apply pl-2 pt-5;
+
+        &-value {
+            @apply font-bold;
+        }
+    }
+}
