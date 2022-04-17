@@ -1,10 +1,13 @@
 import React from "react";
 import LayoutBody from "./components/Layout/LayoutBody";
+import { ContextProvider } from "./context";
 
 function App() {
   return (
     <div className="App">
-      <LayoutBody />
+      <ContextProvider>
+        <LayoutBody />
+      </ContextProvider>
     </div>
   );
 }
