@@ -9,7 +9,7 @@ const LayoutMain = () => {
   const [result, setResult] = useState();
   const [loading, setLoading] = useState(true);
 
-  const fetchResult = async () => {
+  const fetchResult = async () => {  // TODO: This Will be to useContext; 
     try {
       await axios
         .get(`${API_URL}countriesData`, {
