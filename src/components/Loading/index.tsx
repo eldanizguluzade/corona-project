@@ -3,7 +3,9 @@ import "./index.scss";
 const Loading = () => {
   return (
     <div className="loading">
-      <span className="loading-icon">X</span>
+      <div className="loading-icon">
+        <img src="./logo.png" alt="Logo" />
+      </div>
     </div>
   );
 };

@@ -4,6 +4,6 @@
     @apply flex justify-center items-center;
 
     &-icon {
-        @apply text-6xl font-extrabold text-yellow-400 animate-spin;
+        @apply text-4xl w-28 font-extrabold text-yellow-400 animate-spin;
     }
 }
