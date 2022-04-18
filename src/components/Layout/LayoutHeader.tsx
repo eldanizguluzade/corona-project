@@ -7,6 +7,10 @@ import Menu from "../Menu";
 const LayoutHeader = () => {
   const menuItems: Array<IMenuItem> = [
     {
+      name: "Main",
+      path: MAIN_PATH,
+    },
+    {
       name: "Countries",
       path: COUNTRIES_PATH,
     },

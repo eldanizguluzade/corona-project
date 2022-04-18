@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { fetchResult, IResult, IContext, ICoronaItem } from "../../api";
+import { fetchResult, IContext } from "../../api";
 import { CURRENT_PATH } from "../../consts";
 import { Context } from "../../context";
 import { CONTINENT_PATH, COUNTRIES_PATH, TOTAL_PATH } from "../../routes";
@@ -44,9 +44,8 @@ const LayoutMain = () => {
         break;
     }
   };
-  useEffect(() => {
-    switchPath();
-  }, []);
+
+  useEffect(() => switchPath(), []);
 
   return <main>{ShowCards(result)}</main>;
 };
