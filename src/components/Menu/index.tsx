@@ -1,5 +1,6 @@
 import "./index.scss";
 import { IMenuItem } from "../../api";
+import { CURRENT_PATH } from "../../consts";
 
 interface IItems {
   items: Array<IMenuItem>;
@@ -8,8 +9,7 @@ interface IItems {
 const Menu = ({ items }: IItems) => {
 
   const isActive = (path: string) => {
-    const currentPath = window.location.pathname;
-    return currentPath === path ? "active" : "";
+    return CURRENT_PATH === path ? "active" : "";
   };
 
   return (

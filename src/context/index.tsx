@@ -1,14 +1,13 @@
 import { createContext, useState } from "react";
-import { ICoronaItem } from "../api";
+import { ICoronaItem, IResult } from "../api";
 
 export const Context = createContext({});
 
 export const ContextProvider = ({ children }: any) => {
-  const [result, setResult] = useState<Array<ICoronaItem>>();
-  const [loading, setLoading] = useState(true);
+  const [result, setResult] = useState<IResult>();
 
   return (
-    <Context.Provider value={{ result, setResult, loading, setLoading }}>
+    <Context.Provider value={{ result, setResult }}>
       {children}
     </Context.Provider>
   );

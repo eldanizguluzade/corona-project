@@ -3,12 +3,13 @@ import { ICoronaItem } from "../../../api";
 
 interface ICard {
   item: ICoronaItem;
-  key: number;
 }
-const CardItem = ({ item, key }: ICard) => {
+const CardItem = ({ item }: ICard) => {
   return (
-    <div className="card" key={key}>
-      <div className="card-title">{item?.country}</div>
+    <div className="card">
+      <div className="card-title">
+        {item?.country || item?.continent || "World"}
+      </div>
       <div className="card-content">
         {item?.totalcases && (
           <p>
@@ -38,6 +39,18 @@ const CardItem = ({ item, key }: ICard) => {
           <p>
             Total Recovered:
             <span className="card-content-value"> {item?.totalRecovered}</span>
+          </p>
+        )}
+        {item?.totalDeaths && (
+          <p>
+            Total Deaths:
+            <span className="card-content-value"> {item?.totalDeaths}</span>
+          </p>
+        )}
+        {item?.totalCases && (
+          <p>
+            Total Cases:
+            <span className="card-content-value"> {item?.totalCases}</span>
           </p>
         )}
         {item?.activeCases && (

@@ -1,24 +1,22 @@
 import { IMenuItem } from "../../api";
+import { CONTINENT_PATH, COUNTRIES_PATH, MAIN_PATH, TOTAL_PATH } from "../../routes";
+
 import Logo from "../Logo";
 import Menu from "../Menu";
 
 const LayoutHeader = () => {
   const menuItems: Array<IMenuItem> = [
     {
-      name: "Main",
-      path: "/",
-    },
-    {
       name: "Countries",
-      path: "/countries",
-    },
-    {
-      name: "Total",
-      path: "/total",
+      path: COUNTRIES_PATH,
     },
     {
       name: "Continents",
-      path: "/continents",
+      path: CONTINENT_PATH,
+    },
+    {
+      name: "Total",
+      path:  TOTAL_PATH,
     }
   ];
 
